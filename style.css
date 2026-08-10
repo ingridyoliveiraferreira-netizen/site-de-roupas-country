@@ -1,8 +1,16 @@
-/* Definição de fonte padrão e reset básico */
+/* Reset básico e garantia de cálculo correto das larguras */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.5;
     background-color: #f4f4f9;
+    /* Adiciona respiro nas laterais em telas menores que 800px */
+    padding: 0 16px; 
 }
 
 header {
@@ -11,7 +19,8 @@ header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 24px 16px;
+    /* 24px no topo/base, 20px nas laterais internas */
+    padding: 24px 20px; 
 }
 
 main {
@@ -19,7 +28,8 @@ main {
     color: #183C63;
     max-width: 800px;
     margin: 0 auto;
-    padding: 24px 16px;
+    /* 24px no topo/base, 20px nas laterais internas */
+    padding: 24px 20px; 
 }
 
 article {
