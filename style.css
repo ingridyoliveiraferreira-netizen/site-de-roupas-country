@@ -1,109 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+header {
+    background-color: #183C63;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site de Roupas Country</title>
-  <style>
-  
-/* Estilos Gerais */
-    body {
-      background-color: #f4f1ea; /* Fundo suave estilo rustico */
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
+main {
+    background-color: #FFFFFF;
+    color: #183C63;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
 
-    header {
-      background-color: #183c63; 
-      color: #ffffff;      
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 20px auto;
-      border: 5px solid #cf1010;
-      padding: 10px;
-    }
-    
-    main {
-      background-color: #183c63; 
-      color: #ffffff;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+article {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
 
-    /* Nova seção de destaques */
-    .destaques {
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 2px dashed #ffffff;
-    }
-
-    .lista-produtos {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      list-style: none;
-      padding: 0;
-    }
-
-    .lista-produtos li {
-      background-color: #ffffff;
-      color: #183c63;
-      padding: 10px;
-      margin: 10px;
-      border-radius: 5px;
-      font-weight: bold;
-      min-width: 150px;
-    }
-
-    /* Rodapé */
-    footer {
-      background-color: #0f253d;
-      color: #ffffff;
-      text-align: center;
-      max-width: 800px;
-      margin: 20px auto 0 auto;
-      padding: 15px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Site de Roupas Country</h1>
-    <p>Vou compartilhar conhecimentos e dicas de roupas country</p>
-  </header> 
-  
-  <main>
-     <img src="imagem.png" alt="Logotipo quadrado de estilo country com uma bota de couro marrom detalhada no centro, cercada por uma ferradura, corda e pequenas flores do campo. No topo, o texto 'Rustic Roots' em letras estilizadas e, logo abaixo, 'Vestuário Country'. O fundo simula um pergaminho antigo com bordas de madeira, posicionado sobre uma imagem desfocada de um celeiro e cerca de fazenda ao pôr do sol.">
-     
-     <h2>Meu primeiro post</h2>
-     <p>Por: Ingridy Ferreira</p>
-     <p>Boas-vindas ao meu novo site! Aqui vou compartilhar dicas de roupas country.</p>
-
-     <section class="destaques">
-       <h3>Nossos Destaques de Estilo</h3>
-       <ul class="lista-produtos">
-         <li>🤠 Chapéus Oficiais</li>
-         <li>🥾 Botas de Couro</li>
-         <li>➿ Cintos e Fivelas</li>
-       </ul>
-     </section>
-  </main> 
-
-  <footer>
-    <p>&copy; 2026 Site de Roupas Country. Desenvolvido por Ingridy Ferreira.</p>
-  </footer>
-
-</body>
-</html>
+.artigo-autor {
+    font-weight: bold;
+}
