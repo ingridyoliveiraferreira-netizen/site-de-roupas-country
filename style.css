@@ -1,10 +1,17 @@
+/* Definição de fonte padrão e reset básico */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f9;
+}
+
 header {
     background-color: #183C63;
     color: #FFFFFF;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 24px 16px;
 }
 
 main {
@@ -12,7 +19,7 @@ main {
     color: #183C63;
     max-width: 800px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 24px 16px;
 }
 
 article {
@@ -25,8 +32,11 @@ img {
     width: 80px;
     height: 80px;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 .artigo-autor {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
 }
