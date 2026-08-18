@@ -1,2 +1,174 @@
-# site-de-roupas-country
-venha encontrar seu estilo western
+/* Reset Básico e Box-Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variáveis de Tema Claro (Padrão) */
+:root {
+  --bg-body: #f4f4f9;
+  --bg-card: #ffffff;
+  --bg-header: #183c63;
+  --text-main: #183c63;
+  --text-header: #ffffff;
+  --text-muted: #555555;
+  --border-color: #e2e8f0;
+  --accent-color: #cf1010;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Variáveis do Tema Escuro */
+body.dark-theme {
+  --bg-body: #0d1b2a;
+  --bg-card: #1b263b;
+  --bg-header: #0f172a;
+  --text-main: #e0e1dd;
+  --text-header: #ffffff;
+  --text-muted: #a0aec0;
+  --border-color: #2e3a59;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos Gerais */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  padding: 20px 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Layout Principal Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: var(--bg-header);
+  color: var(--text-header);
+  text-align: center;
+  padding: 24px 20px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  border-bottom: 4px solid var(--accent-color);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+/* Botão de Troca de Tema */
+.theme-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: 1px solid var(--text-header);
+  color: var(--text-header);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.theme-btn:hover {
+  background-color: var(--text-header);
+  color: var(--bg-header);
+}
+
+/* Conteúdo Principal */
+main {
+  background-color: var(--bg-card);
+  padding: 24px 20px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Imagem Principal Banner */
+.banner-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Disposição dos Posts */
+.posts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+}
+
+.post-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.artigo-autor {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Seção de Destaques */
+.destaques {
+  padding-top: 16px;
+  border-top: 2px dashed var(--border-color);
+  text-align: center;
+}
+
+.destaques h3 {
+  margin-bottom: 16px;
+}
+
+.lista-produtos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.lista-produtos li {
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--bg-header);
+  color: var(--text-header);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  margin-top: 20px;
+}
